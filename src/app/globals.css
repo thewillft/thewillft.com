@@ -18,3 +18,12 @@ body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
 }
+
+.hoverable {
+  @apply text-neutral-400;
+}
+
+.hoverable:hover {
+  @apply text-[#ffffff];
+  @apply underline;
+}
