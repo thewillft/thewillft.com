@@ -20,7 +20,7 @@ export default function Projects() {
             <div className="mb-7">
                 <h1 className="text-3xl font-semibold">Projects</h1>
             </div>
-            <div className="grid gap-4 grid-cols-3">
+            <div className="grid gap-4 grid-cols-1 lg:grid-cols-3">
                 {projects.map(project => (
                     <a key={project.id} href={project.html_url} rel="noopener noreferrer" target="_blank">
                         <ProjectCard 
