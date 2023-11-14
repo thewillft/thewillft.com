@@ -20,10 +20,12 @@ body {
 }
 
 .hoverable {
+  @apply fill-neutral-400;
   @apply text-neutral-400;
 }
 
 .hoverable:hover {
+  @apply fill-[#ffffff];
   @apply text-[#ffffff];
   @apply underline;
 }
