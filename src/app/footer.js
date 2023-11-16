@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer className="flex flex-col lg:flex-row items-center justify-between mt-14">
+        <footer className="mt-auto pt-10 md:pt-16 flex flex-col lg:flex-row items-center justify-between">
             <div className="flex flex-1 justify-start items-center gap-4 text-neutral-400">
                 <a className="" href="https://vercel.com/" rel="noopener noreferrer" target="_blank">
                     <svg className="hoverable" width="64" height="24" viewBox="0 0 283 64">
