@@ -1,3 +1,4 @@
+import Highlighter from "../highlighter"
 import Experience from "./experience"
 
 const experiences = [
@@ -29,11 +30,14 @@ export default function Resume() {
             <section className="about">
                 <h1 className="text-2xl font-semibold underline">About</h1>
                 <p className="text-neutral-400 mt-3">
-                    My name is <span className="text-rose-400">Will</span> and I am a senior at Rochester Institute of Technology (RIT), pursuing a <span className="text-rose-400">bachelor&apos;s degree in Computer Science</span>. 
-                    I&apos;m currently searching for software engineering internship positions to fulfill my degree&apos;s cooperative education requirements. 
-                    I&apos;m passionate about all things programming and am currently practicing my <span className="text-rose-400">web development</span> skills. 
-                    Previously, I&apos;ve worked on <span className="text-rose-400">desktop applications</span>, <span className="text-rose-400">Discord bots</span>, <span className="text-rose-400">monitoring tools</span>, <span className="text-rose-400">API integrations</span>, and more. 
-                    I&apos;m most proud of the time I spent freelancing at CryptoKnight LLC, in which I was able to play a pivotal role in helping them provide cryptocurrency trading services to their clients.
+                    <Highlighter
+                        string={'My name is Will and I am a senior at Rochester Institute of Technology (RIT), pursuing a bachelor\'s degree in Computer Science. ' +
+                                'I\'m currently searching for software engineering internship positions to fulfill my degree\'s cooperative education requirements. ' +
+                                'I\'m passionate about all things programming and am currently practicing my web development skills. ' +
+                                'Previously, I\'ve worked on desktop applications, Discord bots, monitoring tools, API integrations, and more. ' +
+                                'I\'m most proud of the time I spent freelancing at CryptoKnight LLC, in which I was able to play a pivotal role in helping them provide cryptocurrency trading services to their clients.'}
+                        substrings={['Will', 'bachelor\'s degree in Computer Science', 'web development', 'desktop applications', 'Discord bots', 'monitoring tools', 'API integrations']}
+                    />
                 </p>
             </section>
             <section className="skills mt-6">
