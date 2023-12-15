@@ -24,6 +24,10 @@ const experiences = [
 	},
 ];
 
+export const metadata = {
+	title: 'Resume',
+};
+
 export default function Resume() {
 	return (
 		<main className="">

@@ -1,5 +1,9 @@
 import ProjectGrid from './projectgrid.js';
 
+export const metadata = {
+	title: 'Projects',
+};
+
 export default function Projects() {
 	return (
 		<main className="">
