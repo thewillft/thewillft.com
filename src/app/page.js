@@ -1,25 +1,29 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import ProjectCard from './projects/projectcard';
-import QuestionCard from './questioncard';
+import ProjectCard from '@/components/ProjectCard';
+import QuestionCard from '@/components/QuestionCard';
 import Highlighter from './highlighter';
+import CardGrid from '@/components/CardGrid';
 
 const projects = [
 	{
 		title: 'thewillft.com',
 		desc: 'Personal website built using React, Next.js, and Tailwind CSS',
 		year: '2023',
+		href: 'https://github.com/thewillft/thewillft.com',
 	},
 	{
 		title: 'Coming soon',
 		desc: 'A project will fill this spot soon...',
 		year: '2023',
+		href: '#',
 	},
 	{
 		title: 'Coming soon',
 		desc: 'A project will fill this spot soon...',
 		year: '2023',
+		href: '#',
 	},
 ];
 
@@ -76,11 +80,10 @@ export default function Home() {
 					<h1 className="text-3xl font-bold">Hey, I&apos;m Will!</h1>
 					<p className="text-md text-neutral-400 text-center lg:text-left mt-3">
 						<Highlighter
-							string={'I\'m a software developer passionate about automation, scripting, and web development. ' +
-              'I often work on both open-source and commission-based projects. ' +
-              'I enjoy playing badminton, cooking, and gaming.'}
-							substrings={['software developer', 'open-source', 'commission-based']}
+							string={'I\'m a software engineer passionate about AI, automation, and software design. I\'m currently working on my blog sharing concepts like these to anyone and everyone. '}
+							substrings={['software engineer', 'AI', 'automation', 'software design']}
 						/>
+						Check it out <Link href="/blog" className="text-rose-400 underline">here</Link>.
 					</p>
 				</div>
 				<div className="flex flex-1 justify-center">
@@ -99,25 +102,26 @@ export default function Home() {
 					<h1 className="text-2xl font-semibold mr-2">Projects</h1>
 					<Link href="/projects" className="text-xs text-rose-400 hover:underline">View All →</Link>
 				</div>
-				<div className="grid gap-4 grid-cols-1 lg:grid-cols-3">
-					{projects.map(project => (
-						<a key={project.id} href={project.html_url} rel="noopener noreferrer" target="_blank">
-							<ProjectCard
-								{...project}
-							/>
-						</a>
-					))}
-				</div>
+				<CardGrid
+					items={projects}
+					renderCard={(project) => (
+						<ProjectCard
+							key={project.title}
+							{...project}
+						/>
+					)}
+				/>
 			</section>
 			<section className="questions mt-16 lg:mt-20">
 				<div className="flex items-center mb-7">
 					<h1 className="text-2xl font-semibold mr-2">Questions</h1>
 				</div>
-				<div className="grid gap-4 grid-cols-1 lg:grid-cols-3">
-					{questions.map((question, i) => (
-						<QuestionCard key={i} {...question} />
-					))}
-				</div>
+				<CardGrid
+					items={questions}
+					renderCard={(question, index) => (
+						<QuestionCard key={index} {...question} />
+					)}
+				/>
 			</section>
 		</main>
 	);

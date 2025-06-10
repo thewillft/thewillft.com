@@ -1,4 +1,4 @@
-import ProjectGrid from './projectgrid.js';
+import ProjectGrid from '@/components/ProjectGrid';
 
 export const metadata = {
 	title: 'Projects',
