@@ -1,9 +1,9 @@
-import VercelIcon from '../components/icons/VercelIcon';
-import TailwindIcon from '../components/icons/TailwindIcon';
-import NextjsIcon from '../components/icons/NextjsIcon';
-import LeetcodeIcon from '../components/icons/LeetcodeIcon';
-import GithubIcon from '../components/icons/GithubIcon';
-import LinkedinIcon from '../components/icons/LinkedinIcon';
+import VercelIcon from '@/components/icons/VercelIcon';
+import TailwindIcon from '@/components/icons/TailwindIcon';
+import NextjsIcon from '@/components/icons/NextjsIcon';
+import LeetcodeIcon from '@/components/icons/LeetcodeIcon';
+import GithubIcon from '@/components/icons/GithubIcon';
+import LinkedinIcon from '@/components/icons/LinkedinIcon';
 
 export default function Footer() {
 	return (

@@ -6,11 +6,11 @@ export default function Experience({ title, subtitle, from, to, bullets }) {
 			<div className="flex flex-col md:flex-row md:items-center justify-center md:justify-start">
 				<h2 className="font-semibold text-lg mr-1">{title}</h2>
 				<span className="font-normal text-sm text-neutral-400">
-                    &#40;
+					&#40;
 					<time dateTime={from}>{DateStringToReadable(from)}</time>
-                    &nbsp; - &nbsp;
+					&nbsp; - &nbsp;
 					<time dateTime={to}>{DateStringToReadable(to)}</time>
-                    &#41;
+					&#41;
 				</span>
 			</div>
 			<h3>{subtitle}</h3>

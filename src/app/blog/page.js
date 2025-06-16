@@ -1,7 +1,6 @@
 import { client } from '../../../tina/__generated__/client';
 import BlogCard from '@/components/BlogCard';
 import CardGrid from '@/components/CardGrid';
-import Link from 'next/link';
 
 export default async function BlogPage() {
 	const postsResponse = await client.queries.postConnection();
@@ -13,6 +12,7 @@ export default async function BlogPage() {
 			slug: post.node._sys.filename.replace('.md', ''),
 			draft,
 			heroImage,
+			href: `/blog/${post.node._sys.filename.replace('.md', '')}`,
 		};
 	}).filter(post => !post.draft);
 
@@ -26,14 +26,13 @@ export default async function BlogPage() {
 					className="lg:grid-cols-4"
 					items={posts}
 					renderCard={(post) => (
-						<Link href={`/blog/${post.slug}`} className="block group" key={post.slug}>
-							<BlogCard
-								title={post.title}
-								description={post.description}
-								slug={post.slug}
-								heroImage={post.heroImage}
-							/>
-						</Link>
+						<BlogCard
+							key={post.slug}
+							title={post.title}
+							description={post.description}
+							slug={post.slug}
+							heroImage={post.heroImage}
+						/>
 					)}
 				/>
 			</div>

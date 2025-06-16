@@ -1,5 +1,5 @@
-import Highlighter from '../highlighter';
-import Experience from './experience';
+import Highlighter from '@/components/Highlighter';
+import Experience from '@/components/Experience';
 
 const experiences = [
 	{
@@ -18,8 +18,8 @@ const experiences = [
 		from: '2019-10',
 		to: '2021-8',
 		bullets: [
-			'Supervised the company’s support team and expanded the team to meet the needs of the company.',
-			'Oversaw the company’s software and web panels as well as the company’s dedicated machines in order to keep operations running smoothly.',
+			'Supervised the company\'s support team and expanded the team to meet the needs of the company.',
+			'Oversaw the company\'s software and web panels as well as the company\'s dedicated machines in order to keep operations running smoothly.',
 		],
 	},
 ];

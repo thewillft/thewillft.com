@@ -3,7 +3,7 @@ import Link from '@/components/Link';
 
 import ProjectCard from '@/components/ProjectCard';
 import QuestionCard from '@/components/QuestionCard';
-import Highlighter from './highlighter';
+import Highlighter from '@/components/Highlighter';
 import CardGrid from '@/components/CardGrid';
 
 const projects = [

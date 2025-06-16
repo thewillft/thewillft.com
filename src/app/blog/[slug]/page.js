@@ -1,9 +1,8 @@
 import { client } from '../../../../tina/__generated__/client';
 import { TinaMarkdown } from 'tinacms/dist/rich-text';
-import Codeblock from '../../../components/Codeblock';
-import InlineCode from '../../../components/InlineCode';
-import Link from '../../../components/Link';
-import Image from 'next/image';
+import Codeblock from '@/components/Codeblock';
+import InlineCode from '@/components/InlineCode';
+import Link from '@/components/Link';
 
 const components = {
 	h1: (props) => <h1 className="text-4xl font-extrabold mb-4" {...props} />,
@@ -42,17 +41,6 @@ export default async function Page({ params }) {
 		<main className="flex flex-col items-center w-full min-h-[70vh] bg-transparent">
 			<article className="w-full max-w-4xl mx-auto pt-16 pb-24 px-4">
 				<header className="mb-10">
-					{false && (
-						<div className="relative w-full h-64 mb-8 rounded-lg overflow-hidden">
-							<Image
-								src={'/test.webp'}
-								alt={post.title}
-								fill
-								className="object-cover"
-								priority
-							/>
-						</div>
-					)}
 					<h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-4 text-neutral-50">{post.title}</h1>
 					<div className="flex flex-col md:flex-row md:items-center gap-2 mb-2">
 						<span className="text-rose-400 font-semibold text-lg">{post.description}</span>
