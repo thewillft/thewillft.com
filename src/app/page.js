@@ -16,13 +16,13 @@ const projects = [
 	{
 		title: 'Coming soon',
 		desc: 'A project will fill this spot soon...',
-		year: '2023',
+		year: '2025',
 		href: '#',
 	},
 	{
 		title: 'Coming soon',
 		desc: 'A project will fill this spot soon...',
-		year: '2023',
+		year: '2025',
 		href: '#',
 	},
 ];

@@ -2,7 +2,7 @@ import Card from '@/components/Card';
 
 export default function ProjectCard({ title, desc, year }) {
 	return (
-		<Card className="group">
+		<Card hoverEffect className="group">
 			<div className="group-hover:underline flex items-center mb-2">
 				<h1 className="mr-1 text-lg">{title}</h1>
 				<time dateTime={year} className="text-xs text-rose-400">{year}</time>

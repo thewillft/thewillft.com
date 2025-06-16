@@ -3,7 +3,7 @@ import Card from '@/components/Card';
 
 export default function BlogCard({ title, description, heroImage }) {
 	return (
-		<Card className="flex flex-col transition-transform duration-200 ease-in-out hover:scale-[1.025] hover:shadow-2xl hover:border-rose-400/30">
+		<Card hoverEffect className="flex flex-col">
 			<div className="relative w-full h-48 mb-4">
 				<Image
 					src={heroImage || '/placeholder.png'}
