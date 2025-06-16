@@ -1,6 +1,6 @@
 import { Inter } from 'next/font/google';
 import './globals.css';
-import Navbar from './navbar.js';
+import Navbar from '@/components/Navbar';
 import Footer from './footer.js';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -10,11 +10,11 @@ export const metadata = {
 		template: '%s | William Tietjen',
 		default: 'William Tietjen',
 	},
-	description: 'Software developer working on open-source and commission-based projects.',
+	description: 'Software engineer working in the biotech industry. Interested in AI, automation, and software design.',
 	keywords: [],
 	openGraph: {
 		title: 'William Tietjen',
-		description: 'Software developer working on open-source and commission-based projects.',
+		description: 'Software engineer working in the biotech industry. Interested in AI, automation, and software design.',
 		url: 'https://www.thewillft.com/',
 		siteName: 'thewillft',
 		images: [

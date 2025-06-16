@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Link from 'next/link';
+import Link from '@/components/Link';
 
 import ProjectCard from '@/components/ProjectCard';
 import QuestionCard from '@/components/QuestionCard';
@@ -83,7 +83,7 @@ export default function Home() {
 							string={'I\'m a software engineer passionate about AI, automation, and software design. I\'m currently working on my blog sharing concepts like these to anyone and everyone. '}
 							substrings={['software engineer', 'AI', 'automation', 'software design']}
 						/>
-						Check it out <Link href="/blog" className="text-rose-400 underline">here</Link>.
+						Check it out <Link url="/blog">here</Link>.
 					</p>
 				</div>
 				<div className="flex flex-1 justify-center">
@@ -100,7 +100,7 @@ export default function Home() {
 			<section className="projects">
 				<div className="flex items-center mb-7">
 					<h1 className="text-2xl font-semibold mr-2">Projects</h1>
-					<Link href="/projects" className="text-xs text-rose-400 hover:underline">View All →</Link>
+					<Link url="/projects" className="text-xs text-rose-400">View All →</Link>
 				</div>
 				<CardGrid
 					items={projects}
