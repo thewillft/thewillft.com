@@ -1,3 +1,5 @@
+import { isLocalUrl } from '../libs/url.js';
+
 export default function CardGrid({ items, renderCard, className = '' }) {
 	return (
 		<div className={`grid gap-4 grid-cols-1 lg:grid-cols-3 ${className}`}>
@@ -10,8 +12,7 @@ export default function CardGrid({ items, renderCard, className = '' }) {
 						<a
 							key={item.id || index}
 							href={item.href}
-							rel="noopener noreferrer"
-							target="_blank"
+							{...(!isLocalUrl(item.href) && { rel: 'noopener noreferrer', target: '_blank' })}
 						>
 							{card}
 						</a>
