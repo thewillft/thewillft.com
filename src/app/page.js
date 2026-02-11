@@ -16,9 +16,11 @@ export default function Home() {
 					<h1 className="text-3xl font-bold">Hey, I&apos;m Will!</h1>
 					<p className="text-md text-muted text-center lg:text-left mt-3">
 						<Highlighter
-							string={'I\'m a software developer passionate about automation, scripting, and web development. ' +
-              'I often work on both open-source and commission-based projects. ' +
-              'I enjoy playing badminton, cooking, and gaming.'}
+							string={
+								"I'm a software developer passionate about automation, scripting, and web development. " +
+								'I often work on both open-source and commission-based projects. ' +
+								'I enjoy playing badminton, cooking, and gaming.'
+							}
 							substrings={['software developer', 'open-source', 'commission-based']}
 						/>
 					</p>
@@ -37,14 +39,14 @@ export default function Home() {
 			<section className="projects">
 				<div className="flex items-center mb-7">
 					<h1 className="text-2xl font-semibold mr-2">Projects</h1>
-					<Link href="/projects" className="text-xs text-accent hover:underline">View All →</Link>
+					<Link href="/projects" className="text-xs text-accent hover:underline">
+						View All →
+					</Link>
 				</div>
 				<div className="grid gap-4 grid-cols-1 lg:grid-cols-3">
-					{projects.map(project => (
+					{projects.map((project) => (
 						<a key={project.id} href={project.html_url} rel="noopener noreferrer" target="_blank">
-							<ProjectCard
-								{...project}
-							/>
+							<ProjectCard {...project} />
 						</a>
 					))}
 				</div>

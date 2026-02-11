@@ -11,12 +11,14 @@ export default function ProjectGrid() {
 	useEffect(() => {
 		fetch('https://api.github.com/users/thewillft/repos?per_page=100')
 			.then((data) => data.json())
-			.then((data) => { setProjects(data); });
+			.then((data) => {
+				setProjects(data);
+			});
 	}, []);
 
 	return (
 		<div className="grid gap-4 grid-cols-1 lg:grid-cols-3">
-			{projects.map(project => (
+			{projects.map((project) => (
 				<a key={project.id} href={project.html_url} rel="noopener noreferrer" target="_blank">
 					<ProjectCard
 						title={project.name}

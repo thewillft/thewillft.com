@@ -12,17 +12,17 @@
  */
 
 :root {
-  /* accent */
-  --color-accent: 251 113 133;         /* rose-400  #fb7185 */
+	/* accent */
+	--color-accent: 251 113 133; /* rose-400  #fb7185 */
 
-  /* surfaces */
-  --color-foreground: 255 255 255;     /* white       */
-  --color-background: 23 23 23;        /* neutral-900 */
-  --color-card: 27 27 27;              /* #1b1b1b     */
-  --color-card-border: 64 64 64;       /* neutral-700 */
+	/* surfaces */
+	--color-foreground: 255 255 255; /* white       */
+	--color-background: 23 23 23; /* neutral-900 */
+	--color-card: 27 27 27; /* #1b1b1b     */
+	--color-card-border: 64 64 64; /* neutral-700 */
 
-  /* text */
-  --color-muted: 163 163 163;          /* neutral-400 */
+	/* text */
+	--color-muted: 163 163 163; /* neutral-400 */
 }
 
 /* TODO: uncomment to re-enable light mode
@@ -48,36 +48,36 @@
 */
 
 body {
-  color: rgb(var(--color-foreground));
-  background: rgb(var(--color-background));
+	color: rgb(var(--color-foreground));
+	background: rgb(var(--color-background));
 }
 
 /* ---- hoverable link style ---- */
 .hoverable {
-  fill: rgb(var(--color-muted));
-  color: rgb(var(--color-muted));
+	fill: rgb(var(--color-muted));
+	color: rgb(var(--color-muted));
 }
 
 .hoverable:hover {
-  fill: rgb(var(--color-foreground));
-  color: rgb(var(--color-foreground));
-  text-decoration: underline;
+	fill: rgb(var(--color-foreground));
+	color: rgb(var(--color-foreground));
+	text-decoration: underline;
 }
 
 /* ---- scrollbar ---- */
 body::-webkit-scrollbar {
-  width: 0.5em;
+	width: 0.5em;
 }
 
 body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: rgb(var(--color-accent));
+	background-color: rgb(var(--color-accent));
 }
 
 /* ---- list markers ---- */
 li::marker {
-  color: rgb(var(--color-accent));
+	color: rgb(var(--color-accent));
 }

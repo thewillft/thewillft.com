@@ -3,9 +3,13 @@ export default function Highlighter({ string, substrings = [] }) {
 	return (
 		<span>
 			{string.split(regex).map((part, i) =>
-				substrings.includes(part)
-					? <span key={i} className="text-accent">{part}</span>
-					: part
+				substrings.includes(part) ? (
+					<span key={i} className="text-accent">
+						{part}
+					</span>
+				) : (
+					part
+				),
 			)}
 		</span>
 	);
