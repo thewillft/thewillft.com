@@ -7,6 +7,14 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			colors: {
+				accent: 'rgb(var(--color-accent) / <alpha-value>)',
+				foreground: 'rgb(var(--color-foreground) / <alpha-value>)',
+				background: 'rgb(var(--color-background) / <alpha-value>)',
+				muted: 'rgb(var(--color-muted) / <alpha-value>)',
+				card: 'rgb(var(--color-card) / <alpha-value>)',
+				'card-border': 'rgb(var(--color-card-border) / <alpha-value>)',
+			},
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'gradient-conic':

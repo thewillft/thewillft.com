@@ -2,46 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+ * Theme configuration
+ * -------------------
+ * All values are space-separated RGB channels so Tailwind's
+ * opacity modifier (e.g. text-accent/50) keeps working.
+ *
+ * To change the accent colour site-wide, edit --color-accent below.
+ */
+
 :root {
-  --foreground-rgb: 255, 255, 255;
-  --background-rgb: 23, 23, 23;
+  /* accent */
+  --color-accent: 251 113 133;         /* rose-400  #fb7185 */
+
+  /* surfaces */
+  --color-foreground: 255 255 255;     /* white       */
+  --color-background: 23 23 23;        /* neutral-900 */
+  --color-card: 27 27 27;              /* #1b1b1b     */
+  --color-card-border: 64 64 64;       /* neutral-700 */
+
+  /* text */
+  --color-muted: 163 163 163;          /* neutral-400 */
 }
 
+/* TODO: uncomment to re-enable light mode
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-rgb: 0, 0, 0;
+    --color-accent: 251 113 133;
+    --color-foreground: 255 255 255;
+    --color-background: 23 23 23;
+    --color-card: 27 27 27;
+    --color-card-border: 64 64 64;
+    --color-muted: 163 163 163;
   }
 }
 
+:root (light defaults) {
+  --color-accent: 251 113 133;
+  --color-foreground: 23 23 23;
+  --color-background: 255 255 255;
+  --color-card: 249 250 251;
+  --color-card-border: 209 213 219;
+  --color-muted: 107 114 128;
+}
+*/
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-rgb));
+  color: rgb(var(--color-foreground));
+  background: rgb(var(--color-background));
 }
 
+/* ---- hoverable link style ---- */
 .hoverable {
-  @apply fill-neutral-400;
-  @apply text-neutral-400;
+  fill: rgb(var(--color-muted));
+  color: rgb(var(--color-muted));
 }
 
 .hoverable:hover {
-  @apply fill-[#ffffff];
-  @apply text-[#ffffff];
-  @apply underline;
+  fill: rgb(var(--color-foreground));
+  color: rgb(var(--color-foreground));
+  text-decoration: underline;
 }
 
+/* ---- scrollbar ---- */
 body::-webkit-scrollbar {
   width: 0.5em;
 }
- 
+
 body::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
- 
+
 body::-webkit-scrollbar-thumb {
-  @apply bg-rose-400;
+  background-color: rgb(var(--color-accent));
 }
 
+/* ---- list markers ---- */
 li::marker {
-  @apply text-rose-400;
+  color: rgb(var(--color-accent));
 }

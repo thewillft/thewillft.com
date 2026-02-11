@@ -5,7 +5,7 @@ export default function Experience({ title, subtitle, from, to, bullets }) {
 		<div className="mt-3">
 			<div className="flex flex-col md:flex-row md:items-center justify-center md:justify-start">
 				<h2 className="font-semibold text-lg mr-1">{title}</h2>
-				<span className="font-normal text-sm text-neutral-400">
+				<span className="font-normal text-sm text-muted">
                     &#40;
 					<time dateTime={from}>{DateStringToReadable(from)}</time>
                     &nbsp; - &nbsp;
@@ -15,7 +15,7 @@ export default function Experience({ title, subtitle, from, to, bullets }) {
 			</div>
 			<h3>{subtitle}</h3>
 			<ul className="list-disc pl-5">
-				{bullets?.map((bullet, index) => <li className="text-neutral-400" key={index}>{bullet}</li>)}
+				{bullets?.map((bullet, index) => <li className="text-muted" key={index}>{bullet}</li>)}
 			</ul>
 		</div>
 	);

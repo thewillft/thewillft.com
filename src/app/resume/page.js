@@ -12,7 +12,7 @@ export default function Resume() {
 		<main className="">
 			<section className="about">
 				<h1 className="text-2xl font-semibold underline">About</h1>
-				<p className="text-neutral-400 mt-3">
+				<p className="text-muted mt-3">
 					<Highlighter
 						string={'My name is Will and I am a senior at Rochester Institute of Technology (RIT), pursuing a bachelor\'s degree in Computer Science. ' +
                                 'I\'m currently searching for software engineering internship positions to fulfill my degree\'s cooperative education requirements. ' +
@@ -26,10 +26,10 @@ export default function Resume() {
 			<section className="skills mt-6">
 				<h1 className="text-2xl font-semibold underline">Skills</h1>
 				<ul className="list-disc pl-5 mt-3">
-					<li>Language: <span className="text-neutral-400">Python, Go, Java, HTML, CSS, Javascript, Node.js, C#, C, JSON</span></li>
-					<li>Framework: <span className="text-neutral-400">React, Express.js, Bootstrap CSS, Material UI, Laravel, Tailwind CSS, Next.js</span></li>
-					<li>Database: <span className="text-neutral-400">MySQL, MongoDB, PostgreSQL</span></li>
-					<li>Other: <span className="text-neutral-400">Git, Docker, Linux, Unity</span></li>
+					<li>Language: <span className="text-muted">Python, Go, Java, HTML, CSS, Javascript, Node.js, C#, C, JSON</span></li>
+					<li>Framework: <span className="text-muted">React, Express.js, Bootstrap CSS, Material UI, Laravel, Tailwind CSS, Next.js</span></li>
+					<li>Database: <span className="text-muted">MySQL, MongoDB, PostgreSQL</span></li>
+					<li>Other: <span className="text-muted">Git, Docker, Linux, Unity</span></li>
 				</ul>
 			</section>
 			<section className="experience mt-6">

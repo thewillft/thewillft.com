@@ -14,7 +14,7 @@ export default function Home() {
 			<section className="hero flex flex-col-reverse lg:flex-row items-center mb-16 lg:mb-24">
 				<div className="flex flex-col flex-1 justify-center items-center lg:items-start mt-16 lg:mt-0">
 					<h1 className="text-3xl font-bold">Hey, I&apos;m Will!</h1>
-					<p className="text-md text-neutral-400 text-center lg:text-left mt-3">
+					<p className="text-md text-muted text-center lg:text-left mt-3">
 						<Highlighter
 							string={'I\'m a software developer passionate about automation, scripting, and web development. ' +
               'I often work on both open-source and commission-based projects. ' +
@@ -37,7 +37,7 @@ export default function Home() {
 			<section className="projects">
 				<div className="flex items-center mb-7">
 					<h1 className="text-2xl font-semibold mr-2">Projects</h1>
-					<Link href="/projects" className="text-xs text-rose-400 hover:underline">View All →</Link>
+					<Link href="/projects" className="text-xs text-accent hover:underline">View All →</Link>
 				</div>
 				<div className="grid gap-4 grid-cols-1 lg:grid-cols-3">
 					{projects.map(project => (
