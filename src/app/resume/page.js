@@ -1,5 +1,5 @@
-import Highlighter from '../highlighter';
-import Experience from './experience';
+import Highlighter from '@/components/highlighter';
+import Experience from '@/components/experience';
 
 const experiences = [
 	{

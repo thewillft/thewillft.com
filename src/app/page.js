@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import ProjectCard from './projects/projectcard';
-import QuestionCard from './questioncard';
-import Highlighter from './highlighter';
+import ProjectCard from '@/components/projectcard';
+import QuestionCard from '@/components/questioncard';
+import Highlighter from '@/components/highlighter';
 
 const projects = [
 	{

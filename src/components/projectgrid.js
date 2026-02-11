@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import ProjectCard from './projectcard.js';
+import ProjectCard from '@/components/projectcard';
 
 export default function ProjectGrid() {
 	const [projects, setProjects] = useState([]);
