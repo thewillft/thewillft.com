@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 import Card from '@/components/card';
 import Highlighter from '@/components/highlighter';
+import ProjectGrid from '@/components/projectgrid';
 
 import { projects } from '@/data/projects';
 import { questions } from '@/data/questions';
@@ -42,13 +43,7 @@ export default function Home() {
 						View All →
 					</Link>
 				</div>
-				<div className="grid gap-4 grid-cols-1 lg:grid-cols-3">
-					{projects.map((project) => (
-						<a key={project.id} href={project.html_url} rel="noopener noreferrer" target="_blank">
-							<Card title={project.title} subtitle={project.year} description={project.desc} />
-						</a>
-					))}
-				</div>
+				<ProjectGrid projects={projects} />
 			</section>
 			<section className="questions mt-16 lg:mt-20">
 				<div className="flex items-center mb-7">
