@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import ProjectCard from '@/components/projectcard';
+import Card from '@/components/card';
 
 export default function ProjectGrid() {
 	const [projects, setProjects] = useState([]);
@@ -20,10 +20,10 @@ export default function ProjectGrid() {
 		<div className="grid gap-4 grid-cols-1 lg:grid-cols-3">
 			{projects.map((project) => (
 				<a key={project.id} href={project.html_url} rel="noopener noreferrer" target="_blank">
-					<ProjectCard
+					<Card
 						title={project.name}
-						desc={project.description}
-						year={project.created_at.substring(0, 4)}
+						subtitle={project.created_at.substring(0, 4)}
+						description={project.description}
 					/>
 				</a>
 			))}

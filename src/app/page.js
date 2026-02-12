@@ -1,8 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import ProjectCard from '@/components/projectcard';
-import QuestionCard from '@/components/questioncard';
+import Card from '@/components/card';
 import Highlighter from '@/components/highlighter';
 
 import { projects } from '@/data/projects';
@@ -46,7 +45,7 @@ export default function Home() {
 				<div className="grid gap-4 grid-cols-1 lg:grid-cols-3">
 					{projects.map((project) => (
 						<a key={project.id} href={project.html_url} rel="noopener noreferrer" target="_blank">
-							<ProjectCard {...project} />
+							<Card title={project.title} subtitle={project.year} description={project.desc} />
 						</a>
 					))}
 				</div>
@@ -57,10 +56,12 @@ export default function Home() {
 				</div>
 				<div className="grid gap-4 grid-cols-1 lg:grid-cols-3">
 					{questions.map((question, i) => (
-						<QuestionCard
+						<Card
 							key={i}
-							question={question.question}
-							answer={<Highlighter string={question.answer} substrings={question.highlights} />}
+							title={question.question}
+							description={
+								<Highlighter string={question.answer} substrings={question.highlights} />
+							}
 						/>
 					))}
 				</div>
