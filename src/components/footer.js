@@ -28,19 +28,9 @@ export default function Footer() {
 				</a>
 			</div>
 			<div className="flex flex-1 justify-center items-center">
-				<p className="text-sm text-muted">Made by William Tietjen</p>
+				<p className="text-sm text-muted">&copy; 2026 William Tietjen. All rights reserved.</p>
 			</div>
 			<div className="flex flex-1 justify-center lg:justify-end items-center gap-3">
-				<a
-					className=""
-					href="https://leetcode.com/thewillft/"
-					rel="noopener noreferrer"
-					target="_blank"
-				>
-					<svg className="hoverable" height="24" viewBox="0 0 24 24">
-						<path d="m16.102 17.93-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.363c-.467-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.319-4.38c.467-.467 1.125-.645 1.837-.645s1.357.195 1.823.662l2.697 2.606c.514.515 1.365.497 1.9-.038.535-.536.553-1.387.039-1.901l-2.609-2.636a5.055 5.055 0 0 0-2.445-1.337l2.467-2.503c.516-.514.498-1.366-.037-1.901-.535-.535-1.387-.552-1.902-.038l-10.1 10.101c-.981.982-1.494 2.337-1.494 3.835 0 1.498.513 2.895 1.494 3.875l4.347 4.361c.981.979 2.337 1.452 3.834 1.452s2.853-.512 3.835-1.494l2.609-2.637c.514-.514.496-1.365-.039-1.9s-1.386-.553-1.899-.039zm4.709-4.92H10.666c-.702 0-1.27.604-1.27 1.346s.568 1.346 1.27 1.346h10.145c.701 0 1.27-.604 1.27-1.346s-.569-1.346-1.27-1.346z" />
-					</svg>
-				</a>
 				<a
 					className=""
 					href="https://github.com/thewillft"
@@ -60,6 +50,11 @@ export default function Footer() {
 					<svg className="hoverable rounded" height="24" viewBox="0 0 455 455">
 						<path d="M246.4 204.35v-.665c-.136.223-.324.446-.442.665h.442z" />
 						<path d="M0 0v455h455V0H0zm141.522 378.002H74.016V174.906h67.506v203.096zm-33.753-230.816h-.446C84.678 147.186 70 131.585 70 112.085c0-19.928 15.107-35.087 38.211-35.087 23.109 0 37.31 15.159 37.752 35.087 0 19.5-14.643 35.101-38.194 35.101zM385 378.002h-67.524V269.345c0-27.291-9.756-45.92-34.195-45.92-18.664 0-29.755 12.543-34.641 24.693-1.776 4.34-2.24 10.373-2.24 16.459v113.426h-67.537s.905-184.043 0-203.096H246.4v28.779c8.973-13.807 24.986-33.547 60.856-33.547 44.437 0 77.744 29.02 77.744 91.398v116.465z" />
+					</svg>
+				</a>
+				<a className="" href="https://x.com/thewillft" rel="noopener noreferrer" target="_blank">
+					<svg className="hoverable" height="24" viewBox="0 0 24 24">
+						<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
 					</svg>
 				</a>
 			</div>
