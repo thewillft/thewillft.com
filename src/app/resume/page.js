@@ -59,7 +59,7 @@ export default function Resume() {
 			<section className="experience mt-6">
 				<h1 className="text-2xl font-semibold underline">Experience</h1>
 				{experiences?.map((exp) => (
-					<Experience key={exp.company} {...exp} />
+					<Experience key={exp.title} {...exp} />
 				))}
 			</section>
 			<section className="education mt-6">
