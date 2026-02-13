@@ -10,7 +10,7 @@ import { questions } from '@/data/questions';
 
 export default function Home() {
 	return (
-		<main className="">
+		<main id="main" className="">
 			<section className="hero flex flex-col-reverse lg:flex-row items-center mb-16 lg:mb-24">
 				<div className="flex flex-col flex-1 justify-center items-center lg:items-start mt-16 lg:mt-0">
 					<h1 className="text-3xl font-bold">Hey, I&apos;m Will!</h1>

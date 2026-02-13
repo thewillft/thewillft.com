@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function Resume() {
 	return (
-		<main className="">
+		<main id="main" className="">
 			<section className="about">
 				<h1 className="text-2xl font-semibold underline">About</h1>
 				<p className="text-muted mt-3">

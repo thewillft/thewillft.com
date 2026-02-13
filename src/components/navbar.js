@@ -17,7 +17,12 @@ export default function Navbar() {
 			<Link href="/">
 				<div className="flex flex-col lg:flex-row items-center mb-2 lg:mb-4">
 					<div className="lg:mr-4 mb-2 lg:mb-0">
-						<svg viewBox="0 0 810 809.999993" height="48" className="text-accent">
+						<svg
+							viewBox="0 0 810 809.999993"
+							height="48"
+							className="text-accent"
+							aria-hidden="true"
+						>
 							<g fill="currentColor" fillOpacity="1">
 								<g transform="translate(151.910156, 647.921539)">
 									<g>

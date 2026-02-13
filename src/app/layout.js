@@ -50,6 +50,12 @@ export default function RootLayout({ children }) {
 					inter.className + ' flex flex-col min-h-screen px-5 md:px-20 pt-8 md:pt-14 pb-6 md:pb-10'
 				}
 			>
+				<a
+					href="#main"
+					className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:top-4 focus:left-4 focus:px-4 focus:py-2 focus:bg-accent focus:text-white focus:rounded focus:text-sm focus:font-semibold"
+				>
+					Skip to main content
+				</a>
 				<Navbar />
 				{children}
 				<Footer />
