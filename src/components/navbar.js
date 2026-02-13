@@ -1,12 +1,15 @@
 import Link from 'next/link';
 
 const navigation = [
-	// { name: 'About', href: '#' },
 	{ name: 'Home', href: '/' },
 	{ name: 'Projects', href: '/projects' },
 	{ name: 'Resume', href: '/resume' },
-	{ name: 'Contact', href: '#' },
 ];
+
+const contactEmail = process.env.NEXT_PUBLIC_CONTACT_EMAIL;
+const mailtoHref = contactEmail
+	? `mailto:${contactEmail}?subject=${encodeURIComponent('Hello from your portfolio')}`
+	: '#';
 
 export default function Navbar() {
 	return (
@@ -38,6 +41,9 @@ export default function Navbar() {
 							{item.name}
 						</Link>
 					))}
+					<a href={mailtoHref} className="text-sm lg:text-base leading-6 hoverable">
+						Contact
+					</a>
 				</div>
 			</nav>
 		</header>
