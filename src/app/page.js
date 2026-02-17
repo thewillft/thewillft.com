@@ -1,12 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import Card from '@/components/card';
 import Highlighter from '@/components/highlighter';
 import ProjectGrid from '@/components/projectgrid';
 
 import { projects } from '@/data/projects';
-import { questions } from '@/data/questions';
+import { beyondProjects } from '@/data/beyond-projects';
 
 export default function Home() {
 	return (
@@ -45,21 +44,11 @@ export default function Home() {
 				</div>
 				<ProjectGrid projects={projects} />
 			</section>
-			<section className="questions mt-16 lg:mt-20">
+			<section className="beyond-the-code mt-16 lg:mt-20">
 				<div className="flex items-center mb-7">
-					<h1 className="text-2xl font-semibold mr-2">Questions</h1>
+					<h1 className="text-2xl font-semibold mr-2">Beyond the Code</h1>
 				</div>
-				<div className="grid gap-4 grid-cols-1 lg:grid-cols-3">
-					{questions.map((question, i) => (
-						<Card
-							key={i}
-							title={question.question}
-							description={
-								<Highlighter string={question.answer} substrings={question.highlights} />
-							}
-						/>
-					))}
-				</div>
+				<ProjectGrid projects={beyondProjects} />
 			</section>
 		</main>
 	);

@@ -5,7 +5,12 @@ export default function ProjectGrid({ projects }) {
 		<div className="grid gap-4 grid-cols-1 lg:grid-cols-3">
 			{projects.map((project, i) => {
 				const card = (
-					<Card title={project.title} subtitle={project.year} description={project.description} />
+					<Card
+						title={project.title}
+						subtitle={project.year}
+						description={project.description}
+						image={project.image}
+					/>
 				);
 
 				return project.url ? (
