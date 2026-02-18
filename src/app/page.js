@@ -22,7 +22,7 @@ export default function Home() {
 					<Image
 						src="/me2.jpg"
 						alt="picture of william tietjen"
-						className="rounded"
+						className="rounded shadow-xl shadow-accent/25"
 						width={320}
 						height={320}
 						priority
