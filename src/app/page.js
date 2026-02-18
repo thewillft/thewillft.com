@@ -6,22 +6,16 @@ import ProjectGrid from '@/components/projectgrid';
 
 import { projects } from '@/data/projects';
 import { beyondProjects } from '@/data/beyond-projects';
+import { profile } from '@/data/profile';
 
 export default function Home() {
 	return (
 		<main id="main" className="">
 			<section className="hero flex flex-col-reverse lg:flex-row items-center mb-16 lg:mb-24">
 				<div className="flex flex-col flex-1 justify-center items-center lg:items-start mt-16 lg:mt-0">
-					<h1 className="text-3xl font-bold">Hey, I&apos;m Will!</h1>
+					<h1 className="text-3xl font-bold">Hey, I&apos;m {profile.name}!</h1>
 					<p className="text-md text-muted text-center lg:text-left mt-3">
-						<Highlighter
-							string={
-								"I'm a software developer passionate about automation, scripting, and web development. " +
-								'I often work on both open-source and commission-based projects. ' +
-								'I enjoy playing badminton, cooking, and gaming.'
-							}
-							substrings={['software developer', 'open-source', 'commission-based']}
-						/>
+						<Highlighter string={profile.description} substrings={profile.highlightWords} />
 					</p>
 				</div>
 				<div className="flex flex-1 justify-center">
