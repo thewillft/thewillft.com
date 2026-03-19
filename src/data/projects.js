@@ -1,9 +1,9 @@
 export const projects = [
 	{
-		title: 'thewillft.com',
-		description: 'Personal website built using React, Next.js, and Tailwind CSS',
-		year: '2023',
-		url: 'https://github.com/thewillft/thewillft.com',
+		title: 'pymoonraker',
+		description:
+			'Control your 3D Printer with Python - Typed + Async Python SDK for Moonraker (Klipper API).',
+		year: '2026',
 	},
 	{
 		title: 'TapReply',
@@ -13,8 +13,9 @@ export const projects = [
 		url: 'https://github.com/thewillft/tapreply',
 	},
 	{
-		title: 'Coming soon',
-		description: 'A project will fill this spot soon...',
-		year: '2026',
+		title: 'thewillft.com',
+		description: 'Personal website built using React, Next.js, and Tailwind CSS',
+		year: '2023',
+		url: 'https://github.com/thewillft/thewillft.com',
 	},
 ];
