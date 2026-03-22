@@ -9,7 +9,11 @@ export default function Experience({ title, subtitle, from, to, bullets }) {
 					&#40;
 					<time dateTime={from}>{DateStringToReadable(from)}</time>
 					&nbsp; - &nbsp;
-					<time dateTime={to}>{DateStringToReadable(to)}</time>
+					{to === 'Present' ? (
+						<span>Present</span>
+					) : (
+						<time dateTime={to}>{DateStringToReadable(to)}</time>
+					)}
 					&#41;
 				</span>
 			</div>
