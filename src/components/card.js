@@ -4,7 +4,7 @@ export default function Card({ title, subtitle, description, image }) {
 	return (
 		<div className="group h-full shadow-md rounded border border-card-border bg-card overflow-hidden">
 			{image && (
-				<div className="relative w-full h-40">
+				<div className="relative w-full aspect-video">
 					<Image src={image} alt={title} fill className="object-cover" />
 				</div>
 			)}
